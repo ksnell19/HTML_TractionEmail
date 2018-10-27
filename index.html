@@ -1,623 +1,203 @@
+<!-- Set Doctype. Set content type and viewport. -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <!-- Required meta tags -->
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="format-detection" content="telephone=no">
-    <!-- Mobile meta tag -->
-    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Html Email</title>
-    <style type="text/css"> /*Applied inline styling*/
+	<!-- Required meta tags -->
+	<!-- The following meta tags help ensure random number strings aren't transformed into phone links, and the EDGE meta tag will ensure Windows Phone 8 compatability. -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="format-detection" content="telephone=no">
+	<!-- Mobile meta tag -->
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+		<title>Cats layout-desktopSLICED</title>
 
-/* RESET STYLES */
-body {
-	Margin: 0!important;
-	padding: 15px;
-	background-color: #FFF;
-}
-.wrapper {
-	width: 100%;
-	table-layout: fixed;
-}
-.wrapper-inner {
-	width: 100%;
-	background-color: #eee;
-	max-width: 670px;
-	Margin: 0 auto;
-}
-table {
-	border-spacing: 0;
-	font-family: sans-serif;
-	color: #727f80;
-}
-.outer-table {
-	width: 100%;
-	max-width: 670px;
-	margin: 0 auto;
-	background-color: #FFF;
-}
-td {
-    padding: 0;
-}
-.header {
-    background-color: #C2C1C1;
-    border-bottom: 3px solid #81B9C3;
-}
-p {
-    Margin:0;
-}
-.header p {
-    text-align: center;
-    padding: 1%;
-    font-weight: 500;
-    font-size: 11px;
-    text-transform: uppercase;
-}
-a {
-    color: #F1F1F1;
-    text-decoration: none;
-}
-/*--- End Outer Table 1 --*/
-.main-table-first {
-	width: 100%;
-	max-width: 610px;
-	Margin: 0 auto;
-	background-color: #FFF;
-	border-radius: 6px;
-	margin-top: 25px;
-}
-/*--- Start Two Column Sections --*/
-.two-column {
-    text-align: center;
-    font-size: 0;
-    padding: 5px 0 10px 0;
-}
-.two-column .section {
-    width: 100%;
-    max-width: 300px;
-    display: inline-block;
-    vertical-align: top;
-}
-.two-column .content {
-    font-size: 16px;
-    line-height: 20px;
-    text-align: justify;
-}
-.content {
-    width: 100%;
-    padding-top: 20px;
-}
-.center {
-    display: table;
-    Margin: 0 auto;
-}
-img {
-    border: 0;
-}
-img.logo {
-    margin-left: 68%;
-    max-width: 200px!important;
-}
-#callout {
-    float: right;
-    Margin: 4% 5% 2% 0;
-    height: auto;
-    overflow: hidden;
-}
-#callout img {
-    max-width: 20px;
-}
-.social {
-    list-style-type: none;
-    Margin-top: 1%;
-    padding: 0;
-}
-.social li {
-    display: inline-block;
-}
-.social li img {
-    max-width: 15px;
-    Margin-bottom: 0;
-    padding-bottom: 0;
-}
-/*--- Start Outer Table Banner Image, Text & Button --*/
-.image img {
-    width: 100%;
-    max-width: 670px;
-    height: 10px;
-}
-.main-table {
-    width: 100%;
-    max-width: 610px;
-    margin: 0 auto;
-    background-color: #FFF;
-    border-radius: 6px;
-}
-.one-column .inner-td {
-    font-size: 16px;
-    line-height: 20px;
-    text-align: justify;
-}
-.inner-td {
-    padding: 10px;
-}
-.h2 {
-    text-align: center;
-    font-size: 23px;
-    font-weight: 600;
-    line-height: 45px;
-    Margin: 12px;
-    color: #4A4A4A;
-}
-p.center {
-    text-align: center;
-    max-width: 580px;
-    line-height: 24px;
-}
-.button-holder-center {
-    text-align: center;
-    Margin: 5% 2% 3% 0;
-}
-.button-holder {
-    float: right;
-    Margin: 5% 0 3% 0;
-}
-.btn {
-    font-size: 15px;
-    font-weight: 600;
-    background: #81BAC6;
-    color: #FFF;
-    text-decoration: none;
-    padding: 9px 16px;
-    border-radius: 28px;
-}
-/*--- Start Two Column Image & Text Sections --*/
-.two-column img {
-    width: 100%;
-    max-width: 280px;
-    height: auto;
-}
-.two-column .text {
-    padding: 10px 0;
-}
-/*--- Start 3 Column Image & Text Section --*/
-.outer-table-2 {
-	width: 100%;
-	max-width: 670px;
-	margin: 22px auto;
-	background-color: #C2C1C1;
-    border-bottom: 3px solid #81B9C3;
-    border-top: 3px solid #81B9C3;
-}
-.three-column {
-    text-align: center;
-    font-size: 0;
-    padding: 10px 0 30px 0;
-}
-.three-column .section {
-    width: 100%;
-    max-width: 200px;
-    display: inline-block;
-    vertical-align: top;
-}
-.three-column .content {
-    font-size: 16px;
-    line-height: 20px;
-}
-.three-column img {
-    width: 40%;
-    max-width: 125px;
-    height: auto;
-}
-.outer-table-2 p {
-	margin-top: 6px;
-	color: #FFF;
-	font-size: 18px;
-	font-weight: 500;
-	line-height: 23px;
-}
-/*--- Start Two Column Article Section --*/
-.outer-table-3 {
-    width: 100%;
-    max-width: 670px;
-    margin: 22px auto;
-    background-color: #C2C1C1;
-    border-top: 3px solid #81B9C3;
-}
-.h3 {
-	text-align: center;
-	font-size: 21px;
-	font-weight: 600;
-	Margin-bottom: 8px;
-	color: #4A4A4A;
-}
-/*--- Start Bottom One Column Section --*/
-.inner-bottom {
-	padding: 22px;
-}
-.h1 {
-    text-align: center!important;
-    font-size: 25px!important;
-    font-weight: 600;
-    line-height: 45px;
-    Margin: 12px 0 20px 0;
-    color: #4A4A4A;
-}
-.inner-bottom p {
-	font-size: 16px;
-	line-height: 24px;
-	text-align: justify;
-}
-/*--- Start Footer Section --*/
-.footer {
-	width: 100%;
-	background-color: #C2C1C1;
-	Margin: 0 auto;
-    color: #FFF;
-}
-.footer  img {
-	max-width: 135px;
-	Margin: 0 auto;
-	display: block;
-	padding: 4% 0 1% 0;
-}
-p.footer {
-	text-align: center;
-	color: #FFF!important;
-	line-height: 30px;
-	padding-bottom: 4%;
-    text-transform: uppercase;
-}
-/*--- MEDIA QUERIES --*/
-@media screen and (max-width: 400px) {
-	.h1 {
-		font-size: 22px;
-	}
-	.two-column .column, .three-column .column {
-		max-width: 100%!important;
-	}
-	.two-column img {
-		width: 100%!important;
-	}
-	.three-column img {
-		max-width: 60%!important;
-	}
-}
-@media screen and (min-width: 401px) and (max-width: 400px) {
+	<!-- Applied inline styling -->
+	<style type="text/css">
+	/* RESET STYLES */
+      body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important; -webkit-text; size-adjust:100%; -ms-text-size-adjust:100%;}
+      table{border-collapse: collapse;}
+      img, a img{border:0; outline:none; text-decoration:none; display:block;}
+/*      h1, h2, h3, h4, h5, h6{margin:0; padding:0;}*/
+    /* CLIENT SPECIFIC STYLES */
+      .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /*Force Hotmail/Outlook to display emails at full width*/
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{line-height:100%;} /*Force Hotmail/Outlook to display line heights normally. */
+    /* DESKTOP VERSION OUTLOOK */
+      table, td{mso-table-lspace:0pt; msp-table-rspace:0pt;} /*Remove spacing between tables in Outlook 2007 and up. */
+      #outlook a{padding:0;} /*Force Outlook 2007 and up to provide a "view in browser" message.*/
+      img{-ms-interpolation-mode: bicubic;} /*Force IE to smoothly render resized images. */
+      body, table, td, p, a, li, blockquote{-ms-text-size-adjust:100%; -wenkit-text-size-adjust:100%;} /*Prevent Windows- and Webkit- based mobile platforms from changing declared text sizes. */
+	  body{width:100% !important; min-width:100% !important;} /*Force iOS Mail to render the email at full width*/
 
-	.two-column .column {
-		max-width: 50%!important;
-	}
-	.three-column .column {
-		max-width: 33%!important;
-}
-}
-@media screen and (max-width:768px) {
-img.logo {
-	float:none !important;
-	margin-left:0% !important;
-	max-width: 200px!important;
-}
+    /* GENERAL STYLES */
+	  body {}
+      h1, h2, h3, p, a{font-family: Arial, "sans-serif";}
+	  h1 {font-size: 44px; font-weight: lighter;}
+	  h2 {font-size: 30px; font-weight: lighter;}
+	  p {font-size: 14px;}
+      a {color:#0088cc; font-size: 14px; font-weight: 100; line-height: 100%; text-align: center; text-decoration: none; padding-bottom:40px;}
+	  #Table_01 {background-color: #FaFaFa; border-color: #979797;}
+	  .TableClass_01 {background-color: #FaFaFa;}
+	  .TableClass_01 img {display: block; margin-left: auto; margin-right: auto;}
+	  .TableClass_01 p {padding-bottom: 10px;}
+	  .TableClass_02 {background-color: #FFFFFF;}
+	  .TableClass_02 h2 {line-height: 2%;}
+	  .TableClass_03 {background-color: #FFFFFF;}
+	  .TableClass_03 a {line-height: 2%;}
+	  .TableClass_04 {background-color: #FFFFFF;}
+	  .TableClass_05 {width: 680px; background-color: #F2F2F2;}
+	  .wrapper {width: 690px; border: 14px solid white; margin: 0 auto;}
+	  .line {width: 680px; border-top: none !important; border: 1px solid #979797;}
 
-#callout {
-	float:none !important;
-	margin: 0% 0% 0% 0;
-	height: auto;
-	text-align:center;
-	overflow: hidden;
-}
-#callout img {
-    max-width:26px !important;
-}
-.two-column .section {
-	width: 100% !important;
-	max-width: 100% !important;
-	display: inline-block;
-	vertical-align: top;
-}
 
-.two-column img {
-	width: 100% !important;
- 	height: auto !important;
-}
-img.img-responsive {
-    width:100% !important;
-    height:auto !important;
-    max-width:100% !important;
-}
-.content {
-	width: 100%;
-	padding-top:0px !important;
-}
-}
-</style>
+    /* MOBILE STYLES */
+	  @media screen and (max-width: 400px) {
+	  h1 {font-size: 22px;}
+	  h2 {font-size: 22px;}
+	  p {font-size:12px;}
+	  .wrapper {max-width: 100%!important;}
+	  img {display: block;}
+	  }
+
+	  @media screen and (min-width: 401px) and (max-width: 400px) {
+	  h1 {font-size: 22px;}
+	  h2 {font-size: 22px;}
+	  .wrapper {max-width: 50%!important;}
+	  img {display: block !important; width:50% !important; max-width:50% !important;}
+	  }
+
+	  @media screen and (max-width:768px) {
+	  img {display: block !important; width:100% !important; height:auto !important; max-width:100% !important;}
+	  .wrapper {width: 100% !important; padding-top:0px !important;}
+	  }
+     }
+    </style>
 </head>
 
-<body>
-    <div class="wrapper">
-    	<div class="wrapper-inner">
-    		<table class="outer-table">
-    			<tr>
-    				<td class="header">
-    					<p><a href="index.html#">Click to view this email in your browser</a></p>
-    				</td>
-    			</tr> <!--- End Header -->
-            </table> <!--- End Outer Table -->
-            <table class="main-table-first">
-                <tr>
-                    <td class="two-column">
-                        <div class="section">
-                            <table width="100%">
-                                <tr>
-                                    <td class="inner-td">
-                                        <table class="content">
-                                            <tr>
-                                                <td align="center">
-                                                    <img src="img/dm-logo.png" class="logo">
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div> <!--- End First Column of Two Columns -->
-                        <div class="section">
-                            <table width="100%">
-                                <tr>
-                                    <td class="inner-td">
-                                        <table class="content">
-                                            <tr>
-                                                <td>
-                                                    <div id="callout">
-                                                        <ul class="social">
-                                                            <li><a href="index.html#" target="_blank"><img src="img/facebook.png"></a></li>
-                                                            <li><a href="index.html#" target="_blank"><img src="img/googleplus.png"></a></li>
-                                                            <li><a href="index.html#" target="_blank"><img src="img/twitter.png"></a></li>
-                                                            <li><a href="index.html#" target="_blank"><img src="img/youtube.png"></a></li>
-                                                            <li><a href="index.html#" target="_blank"><img src="img/instagram.png"></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div> <!--- End Second Column of Two Columns -->
-                    </td>
-                </tr> <!--- End Two Column Section -->
-                </table> <!--- End Main Table -->
-            <table class="outer-table">
-    			<tr>
-    				<td class="image">
-    					<img src="img/green-background.png">
-    				</td>
-    			</tr> <!--- End Banner -->
-            </table> <!--- End Outer Table -->
-            <table class="main-table">
-    			<tr>
-    				<td class="one-column">
-    					<table width="100%">
-    						<tr>
-    							<td class="inner-td">
-    								<p class="h2">About Us</p>
-    								<p class="center">Design Media is a San Francisco-based digital communications agency serving global organizations. The integrated solutions and immersive experiences we design captivate and engage audiences and exceed business goals.</p>
-    								<p class="button-holder-center">
-    									<a class="btn" href="#">Learn more</a>
-    								</p>
-    							</td>
-    						</tr>
-    					</table>
-    				</td>
-    			</tr> <!--- End Heading, Paragraph & Button Section -->
-    			<tr>
-    				<td class="two-column">
-    					<div class="section">
-    						<table width="100%">
-    							<tr>
-    								<td class="inner-td">
-    									<table class="content">
-    										<tr>
-    											<td>
-    												<img src="img/search.png" class="img-responsive">
-    											</td>
-    										</tr>
-    										<tr>
-    											<td class="text">
-    												<p>We’re passionate about helping our clients stand out through creative storytelling and intelligent platforms.</p>
-    											</td>
-    										</tr>
-    									</table>
-    								</td>
-    							</tr>
-    						</table>
-    					</div> <!--- End First Column of Two Columns -->
-    					<div class="section">
-    						<table width="100%">
-    							<tr>
-    								<td class="inner-td">
-    									<table class="content">
-    										<tr>
-    											<td>
-    												<img src="img/chat.png" class="img-responsive">
-    											</td>
-    										</tr>
-    										<tr>
-    											<td class="text">
-    												<p>Get the project started using integrated ecosystems that are cutting-edge and human-centered.</p>
-    											</td>
-    										</tr>
-    									</table>
-    								</td>
-    							</tr>
-    						</table>
-    					</div> <!--- End Second Column of Two Columns -->
-    				</td>
-    			</tr> <!--- End Two Column Section -->
-            </table> <!--- End Main Table -->
-            <table class="outer-table-2" style="background-color: #C2C1C1;">
-    			<tr>
-    				<td class="three-column">
-    					<div class="section">
-    						<table width="100%">
-    							<tr>
-    								<td class="inner-td">
-    									<table class="content">
-    										<tr>
-    											<td>
-    												<img src="img/camera.png">
-    											</td>
-    										</tr>
-    										<tr>
-    											<td class="text">
-    												<p>Shoot</p>
-    											</td>
-    										</tr>
-    									</table>
-    								</td>
-    							</tr>
-    						</table>
-    					</div> <!--- End First Column of Three Columns -->
-    					<div class="section">
-    						<table width="100%">
-    							<tr>
-    								<td class="inner-td">
-    									<table class="content">
-    										<tr>
-    											<td>
-    												<img src="img/mac.png">
-    											</td>
-    										</tr>
-    										<tr>
-    											<td class="text">
-    												<p>Edit</p>
-    											</td>
-    										</tr>
-    									</table>
-    								</td>
-    							</tr>
-    						</table>
-    					</div> <!--- End Second Column of Three Columns -->
-    					<div class="section">
-    						<table width="100%">
-    							<tr>
-    								<td class="inner-td">
-    									<table class="content">
-    										<tr>
-    											<td>
-    												<img src="img/web.png">
-    											</td>
-    										</tr>
-    										<tr>
-    											<td class="text">
-    												<p>Web</p>
-    											</td>
-    										</tr>
-    									</table>
-    								</td>
-    							</tr>
-    						</table>
-    					</div> <!--- End Third Column of Three Columns -->
-    				</td>
-    			</tr> <!--- End Three Column Section -->
-            </table> <!--- End Outer Table 2 -->
-            <table class="main-table">
-                <tr>
-                    <td class="two-column">
-                        <div class="section">
-                            <table width="100%">
-                                <tr>
-                                    <td class="inner-td">
-                                        <table class="content">
-                                            <tr>
-                                                <td>
-                                                    <img src="img/pie-chart.png" class="img-responsive">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text">
-                                                    <p class="h3">What We Do</p>
-                                                    <p>A lot has changed during our nearly 40 years in business. Our passion for creativity is not one of them. Clients partner with us for the long-term to build creative, tailored solutions. Our metrics of success are client and audience experience</p>
-                                                    <br>
-                                                    <p></p>
-                                                    <br>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div> <!--- End First Column of Two Columns -->
-                        <!--[if (gte mso 9)|(IE)]>
-                        </td><td width="50%" valign="top">
-                        <![endif]-->
-                        <div class="section">
-                            <table width="100%">
-                                <tr>
-                                    <td class="inner-td">
-                                        <table class="content">
-                                            <tr>
-                                                <td class="text">
-                                                    <p class="h3">Our Work</p>
-                                                    <p>Deep experience is applied to every engagement---and has been since 1978. As creative collaborators, we merge imagination and technology to elevate, educate and engage.</p>
-                                                    <br>
-                                                    <p></p>
-                                                    <br>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <img src="img/users.png" class="img-responsive">
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div> <!--- End Second Column of Two Columns -->
-                    </td>
-                </tr> <!--- End Two Column Section -->
-              <tr>
-                <td class="image">
-                  <img src="img/green-background.png">
-                </td>
-              </tr> <!--- End img Banner -->
-                <tr>
-                    <td class="one-column">
-                        <table width="100%">
-                            <tr>
-                                <td class="inner-bottom">
-                                    <p class="h1">Who We Are</p>
-                                    <p>Integral, bespoke and innovative. If you can imagine it, we can build it.</p>
-                                    <br>
-                                    <p> We are fueled by curiosity, governed by integrity, and led by collective wisdom.</p>
-                                    <br>
-                                    <div class="button-holder">
-                                        <a class="btn" href="#">Learn more</a>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr> <!--- End Heading, Text & Button Section -->
-            </table> <!--- End Main Table -->
-            <table class="outer-table-3">
-    			<tr>
-    				<td class="one-column">
-    					<table width="100%">
-    						<tr>
-    							<td class="footer">
-                    <br>
-    								<p class="footer">650 Alabama Street #203 San Francisco, CA 94110<br>&copy; 2018 Design Media, Inc.<br><a href="index.html#">Unsubscribe</a></p>
-    							</td>
-    						</tr>
-    					</table>
-    				</td>
-    			</tr>
-    		</table> <!--- End Main Table -->
-    	</div> <!--- End Wrapper Inner -->
-    </div> <!--- End Wrapper -->
-    <br>
+
+<!-- Setting up container table -->
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+	<center>
+<!-- Save for Web Slices (layout-desktopSLICED.psd) -->
+<div class="wrapper" width="690" border="1" cellpadding="0" cellspacing="0">
+<div class="line" width="640" border="1" cellpadding="0" cellspacing="0">
+
+<table id="Table_01" width="640" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td colspan="6" align="center" valign="middle">
+			<h1>Headline 1</h1>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="4">
+			<img src="images/index_05.png" width="640" height="449" alt="Cats are great"></td>
+	</tr>
+
+<!--- Begin Two Column Section -->
+	<table class="TableClass_01" width="640">
+		<tr>
+			<td colspan="2" align="center" valign="top" width="300">
+				<h2>Feature One</h2>
+				<p>Sleep on keyboard then cats take over the world bit off human's toes lick human with sandpaper tongue ooh, are those your $250 dollar sandals? blep for tickle my belly. </p>
+				<img src="images/index_08.png" width="274" height="397" alt="Cat stare"></td>
+			<td colspan="2" align="center" valign="top" width="340">
+				<h2>Feature Two</h2>
+				<p>Lemme use that as my litter box yet fluff tum, tickle bum, jellybean footies curly toes. Toy mouse squeak roll over.</p>
+				<img src="images/index_09.png" width="275" height="397" alt="Cat stare"></td>
+		</tr>
+	</table>
+<!-- End Two Column-->
+
+	<table class="TableClass_02" width="640">
+		<tr>
+			<td colspan="4" align="center" valign="middle">
+				<h1>Header 2</h1>
+				<h2>with More Words</h2>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center" valign="middle">
+				<img src="images/index_11.png" width="275" height="102" alt="Subhead 1"></td>
+			<td colspan="2" align="center" valign="middle">
+				<img src="images/index_12.png" width="275" height="102" alt="Subhead 2"></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center" valign="middle">
+				<img src="images/index_13.png" width="274" height="123" alt="Subhead 3"></td>
+			<td colspan="2" align="center" valign="middle">
+				<img src="images/index_14.png" width="275" height="123" alt="Subhead 4"></td>
+		</tr>
+	</table>
+
+<!-- Begin Cat Apps -->
+	<table class="TableClass_03" width="640">
+		<tr>
+			<td colspan="12">
+				<hr width="80%">
+				<img src="images/layout-desktopSLICED_19.png" width="640" alt="Look up"></td>
+		</tr>
+		<tr>
+			<td colspan="7" align="center" valign="middle">
+				<p>Check out a list of our must-have cat apps.</p>
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="7" align="center" valign="middle">
+				<a href="https://cat-bounce.com/" target="_blank">
+					<p>View the Cat collection </p></a>
+					<hr width="80%">
+			</td>
+		</tr>
+	</table>
+<!-- End Cat Apps -->
+
+<!-- Begin Info Header -->
+	<table class="TableClass_04" width="640">
+		<tr>
+			<td colspan="7" width="640" align="center" valign="middle">
+				<h1>Headline 3</h1></td>
+		</tr>
+		<tr>
+		<td colspan="3" width="640">
+			<img src="images/index2_23.png" width="213" height="209" alt="Title 1">
+			<a href="https://cat-bounce.com/" target="_blank">
+				<p>View the guide </p></a>
+			<a href="https://cat-bounce.com/" target="_blank">
+				<p>Download in iCat </p></a>
+			</td>
+		<td colspan="3" width="640">
+			<img src="images/index2_24.png" width="213" height="204" alt="Title 2">
+			<a href="https://cat-bounce.com/" target="_blank">
+				<p>Find more info </p></a>
+		</td>
+		<td colspan="3" width="640">
+			<img src="images/layout-desktopSLICED_25.png" width="213" height="204" alt="Title 3">
+			<a href="https://cat-bounce.com/" target="_blank">
+				<p>Visit Cat Support </p></a>
+			</td>
+<!--
+	<tr>
+		<td>
+			<a href="mailto:john@example.com">
+				<img src="images/layout-desktopSLICED_30.png" width="93" height="23" border="0" alt=""></a></td>
+	</tr>
+-->
+		</tr>
+	</table>
+
+<!-- Begin Footer -->
+	<table class="TableClass_05" width="640">
+		<tr>
+			<td colspan="4">
+				<img src="images/index_20.png" width="640" height="143" alt=""></td>
+		</tr>
+	</table>
+<!-- End Footer -->
+
+<!-- End Save for Web Slices -->
+</table>  <!-- End body Table id="Table_01" -->
+</div>    <!-- End Line -->
+</div>    <!-- End Wrapper -->
+</center>
 </body>
 </html>
