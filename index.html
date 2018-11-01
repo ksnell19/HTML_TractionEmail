@@ -29,7 +29,7 @@
 	  body{width:100% !important; min-width:100% !important;} /*Force iOS Mail to render the email at full width*/
 
     /* GENERAL STYLES */
-	  body {}
+	  body {margin: 0 !important; padding: 0;}
       h1, h2, h3, p, a{font-family: Arial, "sans-serif";}
 	  h1 {font-size: 44px; font-weight: lighter;}
 	  h2 {font-size: 30px; font-weight: lighter;}
@@ -37,39 +37,41 @@
       a {color:#0088cc; font-size: 14px; font-weight: 100; line-height: 100%; text-align: center; text-decoration: none; padding-bottom:40px;}
 	  #Table_01 {background-color: #FaFaFa; border-color: #979797;}
 	  .TableClass_01 {background-color: #FaFaFa;}
-	  .TableClass_01 img {display: block; margin-left: auto; margin-right: auto;}
+	  .TableClass_01 img {margin-left: auto; margin-right: auto;}
 	  .TableClass_01 p {padding-bottom: 10px;}
 	  .TableClass_02 {background-color: #FFFFFF;}
 	  .TableClass_02 h2 {line-height: 2%;}
 	  .TableClass_03 {background-color: #FFFFFF;}
 	  .TableClass_03 a {line-height: 2%;}
 	  .TableClass_04 {background-color: #FFFFFF;}
-	  .TableClass_05 {width: 680px; background-color: #F2F2F2;}
+	  .TableClass_05 {background-color: #F2F2F2;}
+	  .TableClass_05 a {color:#999999;}
 	  .wrapper {width: 690px; border: 14px solid white; margin: 0 auto;}
 	  .line {width: 680px; border-top: none !important; border: 1px solid #979797;}
 
 
     /* MOBILE STYLES */
-	  @media screen and (max-width: 400px) {
-	  h1 {font-size: 22px;}
-	  h2 {font-size: 22px;}
-	  p {font-size:12px;}
-	  .wrapper {max-width: 100%!important;}
-	  img {display: block;}
-	  }
-
-	  @media screen and (min-width: 401px) and (max-width: 400px) {
-	  h1 {font-size: 22px;}
-	  h2 {font-size: 22px;}
-	  .wrapper {max-width: 50%!important;}
-	  img {display: block !important; width:50% !important; max-width:50% !important;}
-	  }
-
-	  @media screen and (max-width:768px) {
-	  img {display: block !important; width:100% !important; height:auto !important; max-width:100% !important;}
-	  .wrapper {width: 100% !important; padding-top:0px !important;}
-	  }
-     }
+		@media only screen and (max-width: 660px){
+			body {width:100% !important;}
+			h1 {font-size: 30px;}
+			h2 {font-size: 24px;}
+			p {font-size: 12px;}
+			a {font-size: 12px;}
+			div.wrapper {border: none !important;}
+			div.line {border: none !important;}
+			
+			table#Table_01 td img {width: 70% !important;}
+			table#Table_01 td h1 {text-align: center !important; padding-right: 125px !important;}
+			table.TableClass_01 td {display: block !important; width: 70% !important;}
+			table.TableClass_02 td {display: block !important; width: 70% !important;}
+			table.TableClass_02 td img {padding: 5px !important;}
+			table.TableClass_03 td {display: block !important; width: 70% !important;}
+			table.TableClass_03 td img {padding-right: 125px !important;}
+			table.TableClass_04 td {display: block !important; width: 70% !important;}
+			table.TableClass_04 td img {padding-left: 125px !important;}
+			table.TableClass_05 td {display: block !important; text-align: center !important; width: 70% !important;}
+			table.TableClass_05 td img {padding: 5px 0px 0px 30px !important;}
+     		}
     </style>
 </head>
 
@@ -89,20 +91,20 @@
 	</tr>
 	<tr>
 		<td colspan="4">
-			<img src="images/index_05.png" width="640" height="449" alt="Cats are great"></td>
+			<img src="images/index_05.png" width="640" alt="Cats are great"></td>
 	</tr>
 
 <!--- Begin Two Column Section -->
 	<table class="TableClass_01" width="640">
 		<tr>
-			<td colspan="2" align="center" valign="top" width="300">
+			<td colspan="2" align="center" valign="top" width="320">
 				<h2>Feature One</h2>
-				<p>Sleep on keyboard then cats take over the world bit off human's toes lick human with sandpaper tongue ooh, are those your $250 dollar sandals? blep for tickle my belly. </p>
-				<img src="images/index_08.png" width="274" height="397" alt="Cat stare"></td>
-			<td colspan="2" align="center" valign="top" width="340">
+				<p style="margin-left: 20px;">Sleep on keyboard then cats take over the world bit off human's toes lick human with sandpaper tongue ooh, are those your $250 dollar sandals? blep for tickle my belly. </p>
+				<img src="images/index_08.png" alt="Cat stare"></td>
+			<td colspan="2" align="center" valign="top" width="320" style="margin-right: 10px;">
 				<h2>Feature Two</h2>
-				<p>Lemme use that as my litter box yet fluff tum, tickle bum, jellybean footies curly toes. Toy mouse squeak roll over.</p>
-				<img src="images/index_09.png" width="275" height="397" alt="Cat stare"></td>
+				<p style="margin-left: 35px; margin-right:20px;">Lemme use that as my litter box yet fluff tum, tickle bum, jellybean footies curly toes. Toy mouse squeak roll over.</p>
+				<img style="margin-top: 30px;" src="images/index_09.png" alt="Cat stare"></td>
 		</tr>
 	</table>
 <!-- End Two Column-->
@@ -144,7 +146,7 @@
 		<tr>
 			<td colspan="7" align="center" valign="middle">
 				<a href="https://cat-bounce.com/" target="_blank">
-					<p>View the Cat collection </p></a>
+					<p style="padding-bottom: 30px;">View the Cat collection </p></a>
 					<hr width="80%">
 			</td>
 		</tr>
@@ -158,22 +160,24 @@
 				<h1>Headline 3</h1></td>
 		</tr>
 		<tr>
-		<td colspan="3" width="640">
-			<img src="images/index2_23.png" width="213" height="209" alt="Title 1">
+		<td colspan="3">
+			<img style="margin-top: 20px;" src="images/index2_23.png" width="213" alt="Title 1">
 			<a href="https://cat-bounce.com/" target="_blank">
 				<p>View the guide </p></a>
 			<a href="https://cat-bounce.com/" target="_blank">
 				<p>Download in iCat </p></a>
 			</td>
-		<td colspan="3" width="640">
-			<img src="images/index2_24.png" width="213" height="204" alt="Title 2">
+		<td colspan="3">
+			<img src="images/index2_24.png" width="213" alt="Title 2">
 			<a href="https://cat-bounce.com/" target="_blank">
 				<p>Find more info </p></a>
+			<br>
 		</td>
-		<td colspan="3" width="640">
-			<img src="images/layout-desktopSLICED_25.png" width="213" height="204" alt="Title 3">
+		<td colspan="3">
+			<img src="images/layout-desktopSLICED_25.png" width="213" alt="Title 3">
 			<a href="https://cat-bounce.com/" target="_blank">
 				<p>Visit Cat Support </p></a>
+			<br>
 			</td>
 <!--
 	<tr>
@@ -186,12 +190,26 @@
 	</table>
 
 <!-- Begin Footer -->
-	<table class="TableClass_05" width="640">
-		<tr>
-			<td colspan="4">
-				<img src="images/index_20.png" width="640" height="143" alt=""></td>
-		</tr>
-	</table>
+<table class="TableClass_05" style="background-color:#f2f2f2;" cellpadding="7" cellspacing="0">
+	<tr>
+		<td colspan="4" align="right"> 
+			<a href="#">Link 1</a> 
+		</td>
+		<td colspan="3" align="right">
+			<a href="#">Link 2</a>
+		</td>
+		<td colspan="3" align="center">
+			<a href="tel:1-800-MY-CATSS">1-800-MY-CATSS</a>
+		</td>
+		<td colspan="2" align="left">
+			<a href="#">Link 3</a>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="11">
+			<img src="images/layout-desktopSLICED_29.png"  width="662" height="102"  alt="Footer"></td>
+	</tr>
+</table>
 <!-- End Footer -->
 
 <!-- End Save for Web Slices -->
